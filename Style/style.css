@@ -1,0 +1,1349 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,300&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', serif;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+nav {
+    background: rgb(175, 10, 10);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 20%;
+    color: white;
+    font-family: 'Modak', sans-serif;
+    font-size: 40px;
+}
+
+.gap {
+    width: 20%;
+}
+
+#navbar {
+    width: 60%;
+    list-style: none;
+    text-align: right;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar li a {
+    color: white;
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    padding: 16px 25px;
+    transition: all .2s ease-out;
+}
+
+#navbar li a:hover,
+.active {
+    color: #AF0A0A !important;
+    background-color: #fff;
+}
+
+.navbar-mobile {
+    display: none;
+}
+
+.btn-toggle {
+    display: none;
+}
+
+/* Section - 2*/
+
+#section-1 {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: top center;
+    -webkit-animation: slider 40s infinite;
+            animation: slider 40s infinite;
+    position: relative;
+    background-image: url(../images/cleeping\ cat.jpg);
+}
+
+#section-1:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 750px;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#section-1 h1 {
+    color: #e9e9e9;
+    font-size: 60px;
+    margin-top: 220px;
+    z-index: 1;
+    position: relative;
+}
+
+#section-1 h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: #b60a0ab0;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+#section-1 h1:hover::after {
+    height: 30px;
+}
+
+/* @keyframes slider {
+    0% {
+        background-image: url(../images/White-black\ dog.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    25% {
+        background-image: url(../images/orange\ dog.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    50% {
+        background-image: url(../images/cat\ and\ dog.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    75% {
+        background-image: url(../images/grey\ white\ cat.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    100% {
+        background-image: url(../images/cleeping\ cat.jpg);
+        background-attachment: fixed;
+        background-size: cover;
+    }
+} */
+
+/* Section - 2 */
+
+#section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.box .img {
+    width: 50%;
+    height: 500px;
+    background-size: cover;
+}
+
+.box .img-1 {
+    background-image: url(../images/cleeping\ cat.jpg);
+}
+
+.box .img-2 {
+    background-image: url(../images/dark\ dog.jpg);
+}
+
+.box .img-3 {
+    background-image: url(../images/little\ kittens.jpg);
+}
+
+.box div {
+    width: 50%;
+    padding: 40px;
+    background-color: #AF0A0A;
+}
+
+.box div h2 {
+    font-size: 40px;
+    color: #fff;
+    padding-bottom: 15px;
+}
+
+.box div p {
+    font-size: 18px;
+    font-weight: 100;
+    color: rgb(226, 226, 226);
+    line-height: 26px;
+}
+
+.box div button {
+    padding: 10px 20px;
+    font-family: 'Poppings', sans-serif;
+    margin: 20px 0;
+    border: 1px solid #AF0A0A;
+    font-size: 18px;
+    font-weight: bold;
+    color: #AF0A0A;
+    outline: none;
+    transition: all 0.5s ease-in;
+}
+
+.box div button:hover {
+    background-color: #AF0A0A;
+    color: white;
+    border: 1px solid white;
+    outline: none;
+}
+
+
+/* Section - 3 */
+
+#section-3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#section-3 h2 {
+    color: #fff;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding: 100px 0;
+    background-color: #AF0A0A;
+}
+
+.youtube {
+    height: 600px;
+}
+
+/* Footer */
+
+footer {
+    padding: 50px 70px;
+    background-color: #AF0A0A;
+    display: flex;
+    flex-direction: row;
+}
+
+.column-1 {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.column-1 h1 {
+    font-size: 70px;
+    font-family: 'Modak', serif;
+    color: white;
+    font-weight: 500;
+}
+
+#margin-top {
+    margin-top: 20px;
+}
+
+.column-1 a {
+    font-size: 20px;
+    color: white;
+    margin: 10px 0;
+}
+
+.column-1 a:hover {
+    text-decoration: underline;
+}
+
+.column-1 ul {
+    list-style-type: none;
+}
+
+.column-1 ul li {
+    margin: 5px 0;
+}
+
+.column-1 ul li a {
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+
+.column-1 ul li a:hover {
+    text-decoration: underline;
+}
+
+.column-2 {
+    width: 50%;
+}
+
+/* ******************* Dog.html ******************* */
+
+#white-nav {
+    background: rgb(255, 255, 255);
+}
+
+#logo-white {
+    width: 20%;
+    color: #AF0A0A;
+    font-family: 'Modak', sans-serif;
+    font-size: 40px;
+}
+
+#navbar-white {
+    width: 40%;
+    list-style: none;
+}
+
+#navbar-white li {
+    display: inline-block;
+}
+
+#navbar-white li a {
+    color: #AF0A0A;
+    font-family: 'Poppins', serif;
+    font-size: 20px;
+    padding: 16px 25px;
+    transition: all .2s ease-out;
+}
+
+#navbar-white li a:hover,
+.active-white {
+    color: #fff !important;
+    background-color: #AF0A0A;
+}
+
+/* Image banner */
+
+#section_1 {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: top center;
+    position: relative;
+    background-image: url(../images/military\ dog.jpg);
+    background-attachment: fixed;
+}
+
+#section_1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#section_1 h1 {
+    color: #e9e9e9;
+    font-size: 60px;
+    margin-top: 220px;
+    z-index: 1;
+    position: relative;
+}
+
+#section_1 h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: #b60a0ab0;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+#section_1 h1:hover::after {
+    height: 30px;
+}
+
+/* Videos and audios */
+#section_2>h2 {
+    font-size: 40px;
+    color: #AF0A0A;
+    padding: 45px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+/* ***************** cats.html ****************** */
+
+#cats-section_1 {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-image: url(../images/grey\ cat.jpg);
+    background-attachment: fixed;
+}
+
+#cats-section_1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#cats-section_1 h1 {
+    color: #e9e9e9;
+    font-size: 60px;
+    margin-top: 220px;
+    z-index: 1;
+    position: relative;
+}
+
+#cats-section_1 h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: #b60a0ab0;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+#cats-section_1 h1:hover::after {
+    height: 30px;
+}
+
+#contact-section_1 {
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    background-image: url(../images/playing\ cats.jpg);
+    background-attachment: fixed;
+}
+
+#contact-section_1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 750px;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.425);
+}
+
+#contact-section_1 h1 {
+    color: #e9e9e9;
+    font-size: 60px;
+    margin-top: 220px;
+    z-index: 1;
+    position: relative;
+}
+
+#contact-section_1 h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8px;
+    background: #b60a0ab0;
+    width: 100%;
+    height: 20px;
+    z-index: -1;
+    transition: all .5s ease;
+}
+
+#contact-section_1 h1:hover::after {
+    height: 30px;
+}
+
+/* Form  completion */
+
+#contact-section_2 {
+    width: 100%;
+    color: white;
+    background-color: #AF0A0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-section_2 h2 {
+    padding: 50px 60px;
+    font-size: 60px;
+    align-self: flex-start;
+}
+
+#contact-section_2 form {
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#contact-section_2 form .input-box {
+    width: 50%;
+    position: relative;
+    text-align: center;
+}
+
+#contact-section_2 form .input-box .inputs {
+    padding: 10px 15px;
+    margin: 30px 20px;
+    font-size: 25px;
+    width: 60%;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    color: #AF0A0A;
+    font-weight: 100;
+    border: 1px solid white;
+}
+
+.checkbox {
+    width: 30px;
+    height: 30px;
+    padding: 10px 15px;
+    margin: 40px 20px;
+    border-radius: 5px;
+}
+
+.checklabel {
+    font-size: 30px;
+}
+
+#contact-section_2 form .input-box .doublebtn {
+    width: 20%;
+    font-size: 20px;
+    padding: 15px 20px;
+    margin: 30px 20px;
+    transition: 0.5s;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: #AF0A0A;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid white;
+    outline: none;
+}
+
+#contact-section_2 form .input-box .doublebtn:hover {
+    background-color: #AF0A0A;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 0.1rem;
+}
+
+#contact-section_2 form .input-box .labels {
+    position: absolute;
+    top: 45px;
+    left: 140px;
+    color: #AF0A0A;
+    font-size: 20px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+#contact-section_2 form .input-box input:focus~.labels,
+#contact-section_2 form .input-box input:valid~.labels,
+#contact-section_2 form .input-box input:not([value=""])~.labels {
+    font-size: 15px;
+    color: #fff;
+    padding: 5px;
+    top: -5px;
+    left: 120px;
+}
+
+/* Navbar light */
+.navbar-mobile-light {
+    display: none;
+}
+
+.btn-toggle-light {
+    display: none;
+}
+
+/* ******************************************* Responsive design *************************************** */
+
+/* For mobile devices */
+@media (max-width:767px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .gap {
+        width: 80%;
+    }
+
+    .btn-toggle {
+        color: white;
+        display: initial;
+    }
+
+    .navbar-mobile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #AF0A0A;
+    }
+
+    .navbar-mobile > li {
+        width: 100%;
+        padding-bottom: 8px;
+        list-style-type: none;
+    }
+
+    .navbar-mobile > li:last-child {
+        padding-bottom: 5px;
+    }
+
+    .navbar-mobile > li > a {
+        font-size: 20px;
+        color: white !important;
+        background-color: transparent;
+        padding: 5px 0px;
+        padding-left: 10px;
+        padding-right: 100%;
+        transition: 0.5s ease;
+    }
+
+    .navbar-mobile > li > a:hover{
+        color: #AF0A0A !important;
+        background-color: #fff !important;
+        padding-left: 15px !important;
+    }
+
+    .hide {
+        position: absolute;
+        right: -1500px;
+        top: 62px;
+        z-index: 1;
+    }
+
+    #section-1 {
+        width: 100%;
+        height: 600px;
+        -webkit-animation: slider 15s infinite;
+                animation: slider 15s infinite;
+        background-image: url(../mobile\ images/1.jpg);
+    }
+
+    #section-1:after{
+        height: 600px;
+    }
+
+    #section-1 h1 {
+        font-size: 26px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #section-1 h1:after {
+        display: none;
+    }
+
+    /* @keyframes slider {
+        0% {
+            background-image: url(../mobile\ images/2.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    
+        25% {
+            background-image: url(../mobile\ images/3.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    
+        50% {
+            background-image: url(../mobile\ images/4.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    
+        75% {
+            background-image: url(../mobile\ images/5.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    
+        100% {
+            background-image: url(../mobile\ images/6.jpg);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    } */
+
+    .box:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .box .img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .box div {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box div h2 {
+        font-size: 30px;
+    }
+
+    .box div p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .box div button {
+        padding: 10px 20px;
+        margin: 20px 0;
+        font-size: 15px;
+        outline: none;
+    }
+
+    #section-3 h2 {
+        font-size: 50px;
+        padding: 30px 0;
+    }
+
+    .youtube, .youtube iframe {
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px 20px;
+    }
+
+    .column-1, .column-2 {
+        width: 100%;
+    }
+
+    .column-1 h1 {
+        font-size: 35px;
+    }
+
+    #margin-top {
+        margin-top: 10px;
+    }
+
+    .column-1 ul li a {
+        font-size: 15px;
+    }
+
+    .column-1 a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .column-2 iframe {
+        margin-top: 15px;
+    }
+
+    /* Cats.html */
+
+    #cats-section_1 {
+        height: 600px;
+    }
+
+    #cats-section_1:after {
+        height: 600px;
+    }
+
+    #cats-section_1 h1 {
+        font-size: 26px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #cats-section_1 h1:after {
+        display: none;
+    }
+
+    /* Navbar light */
+
+    #navbar-white {
+        display: none;
+    }
+
+    .btn-toggle-light {
+        color: #AF0A0A;
+        display: initial;
+    }
+
+    .navbar-mobile-light {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        display: initial;
+    }
+
+    .navbar-mobile-light > li {
+        width: 100%;
+        padding-bottom: 8px;
+        list-style-type: none;
+    }
+
+    .navbar-mobile-light > li:last-child {
+        padding-bottom: 4px;
+    }
+
+    .navbar-mobile-light > li > a {
+        font-size: 20px;
+        color: #AF0A0A;
+        background-color: transparent;
+        padding: 5px 0px;
+        padding-left: 10px;
+        padding-right: 100%;
+        transition: 0.5s ease;
+    }
+
+    .navbar-mobile-light > li > a:hover {
+        color: #fff !important;
+        background-color: #AF0A0A !important;
+        padding-left: 15px !important;
+    }
+
+    /* Dogs.html */
+    #section_1 {
+        height: 600px;
+    }
+
+    #section_1:after {
+        height: 600px;
+    }
+
+    #section_1 h1 {
+        font-size: 26px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #section_1 h1:after {
+        display: none;
+    }
+
+    /* Contact.html */
+    #contact-section_1 {
+        height: 600px;
+    }
+
+    #contact-section_1::after {
+        height: 600px;
+    }
+
+    #contact-section_1 h1 {
+        font-size: 26px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #contact-section_1 h1:after {
+        display: none;
+    }
+
+    #contact-section_2 h2 {
+        font-size: 40px;
+        width: 100%;
+        padding: 30px 10px;
+        text-align: center;
+    }
+
+    #contact-section_2 form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-section_2 form .input-box {
+        width: 100%;
+    }
+
+    #contact-section_2 form .input-box .inputs {
+        width: 80%;
+        height: 50px;
+        margin: 25px 0;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    #contact-section_2 form .input-box .labels {
+        position: absolute;
+        top: 35px;
+        left: 45px;
+        color: #AF0A0A;
+        font-size: 20px;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    
+    #contact-section_2 form .input-box input:focus~.labels,
+    #contact-section_2 form .input-box input:valid~.labels,
+    #contact-section_2 form .input-box input:not([value=""])~.labels {
+        font-size: 15px;
+        color: #fff;
+        padding: 5px;
+        top: -10px;
+        left: 30px;
+    }
+
+    #contact-section_2 form .input-box .checklabel {
+        font-size: 30px;
+    }
+
+    #contact-section_2 form .input-box .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    #contact-section_2 form .input-box .doublebtn {
+        width: 30%;
+        font-size: 15px;
+        padding: 10px 15px;
+        margin: 20px 30px;
+        border: 1px solid white;
+    }
+    
+    #contact-section_2 form .input-box .doublebtn:hover {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
+
+/* For tablet devices */
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    body {
+        overflow-x: hidden;
+    }
+
+    #navbar {
+        display: none;
+    }
+
+    .gap {
+        width: 80%;
+    }
+
+    .btn-toggle {
+        color: white;
+        display: initial;
+    }
+
+    .navbar-mobile {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #AF0A0A;
+    }
+
+    .navbar-mobile > li {
+        width: 100%;
+        padding-bottom: 8px;
+        list-style-type: none;
+    }
+
+    .navbar-mobile > li:last-child {
+        padding-bottom: 5px;
+    }
+
+    .navbar-mobile > li > a {
+        font-size: 20px;
+        color: white !important;
+        background-color: transparent;
+        padding: 5px 0px;
+        padding-left: 10px;
+        padding-right: 100%;
+        transition: 0.5s ease;
+    }
+
+    .navbar-mobile > li > a:hover{
+        color: #AF0A0A !important;
+        background-color: #fff !important;
+        padding-left: 15px !important;
+    }
+
+    .hide {
+        position: absolute;
+        right: -1500px;
+        top: 62px;
+        z-index: 1;
+    }
+
+    #section-1 {
+        width: 100%;
+        height: 500px;
+        -webkit-animation: slider 15s infinite;
+                animation: slider 15s infinite;
+        background-image: url(../mobile\ images/1.jpg);
+    }
+
+    #section-1:after{
+        height: 500px;
+    }
+
+    #section-1 h1 {
+        font-size: 40px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #section-1 h1::after {
+        height: 13px;
+    }
+
+    #section-1 h1:hover::after {
+        height: 20px;
+    }
+
+    /* @keyframes slider {
+        0% {
+            background-image: url(../mobile\ images/2.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        25% {
+            background-image: url(../mobile\ images/3.jpg);
+            background-position: top;
+            background-size: cover;
+        }
+    
+        50% {
+            background-image: url(../mobile\ images/4.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        75% {
+            background-image: url(../mobile\ images/5.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    
+        100% {
+            background-image: url(../mobile\ images/6.jpg);
+            background-position: center;
+            background-size: cover;
+        }
+    } */
+
+    .box:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .box .img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .box div {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .box div h2 {
+        font-size: 35px;
+    }
+
+    .box div p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .box div button {
+        padding: 10px 20px;
+        margin: 20px 0;
+        font-size: 15px;
+        outline: none;
+    }
+
+    #section-3 h2 {
+        font-size: 55px;
+        padding: 30px 0;
+    }
+
+    .youtube, .youtube iframe {
+        height: 300px;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 10px 50px;
+    }
+
+    .column-1, .column-2 {
+        width: 100%;
+    }
+
+    .column-1 h1 {
+        font-size: 45px;
+    }
+
+    #margin-top {
+        margin-top: 10px;
+    }
+
+    .column-1 ul li a {
+        font-size: 18px;
+    }
+
+    .column-1 a {
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    .column-2 iframe {
+        margin-top: 15px;
+    }
+
+    /* Cats.html */
+
+    #cats-section_1 {
+        height: 500px;
+    }
+
+    #cats-section_1:after {
+        height: 500px;
+    }
+
+    #cats-section_1 h1 {
+        font-size: 40px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #cats-section_1 h1::after {
+        height: 13px;
+    }
+
+    #cats-section_1 h1:hover::after {
+        height: 20px;
+    }
+
+    /* Navbar light */
+
+    #navbar-white {
+        display: none;
+    }
+
+    .btn-toggle-light {
+        color: #AF0A0A;
+        display: initial;
+    }
+
+    .navbar-mobile-light {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        display: initial;
+    }
+
+    .navbar-mobile-light > li {
+        width: 100%;
+        padding-bottom: 8px;
+        list-style-type: none;
+    }
+
+    .navbar-mobile-light > li:last-child {
+        padding-bottom: 4px;
+    }
+
+    .navbar-mobile-light > li > a {
+        font-size: 20px;
+        color: #AF0A0A;
+        background-color: transparent;
+        padding: 5px 0px;
+        padding-left: 10px;
+        padding-right: 100%;
+        transition: 0.5s ease;
+    }
+
+    .navbar-mobile-light > li > a:hover {
+        color: #fff !important;
+        background-color: #AF0A0A !important;
+        padding-left: 15px !important;
+    }
+
+    /* Dogs.html */
+    #section_1 {
+        height: 500px;
+    }
+
+    #section_1:after {
+        height: 500px;
+    }
+
+    #section_1 h1 {
+        font-size: 40px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #section_1 h1::after {
+        height: 13px;
+    }
+
+    #section_1 h1:hover::after {
+        height: 20px;
+    }
+
+    /* Contact.html */
+    #contact-section_1 {
+        height: 500px;
+    }
+
+    #contact-section_1::after {
+        height: 500px;
+    }
+
+    #contact-section_1 h1 {
+        font-size: 40px;
+        margin-top: 200px;
+        text-align: center;
+    }
+
+    #contact-section_1 h1::after {
+        height: 13px;
+    }
+
+    #contact-section_1 h1:hover::after {
+        height: 20px;
+    }
+
+    #contact-section_2 h2 {
+        font-size: 45px;
+        width: 100%;
+        padding: 30px 10px;
+        text-align: center;
+    }
+
+    #contact-section_2 form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #contact-section_2 form .input-box {
+        width: 100%;
+    }
+
+    #contact-section_2 form .input-box .inputs {
+        width: 70%;
+        height: 50px;
+        margin: 25px 0;
+        padding: 10px 15px;
+        font-size: 18px;
+    }
+
+    #contact-section_2 form .input-box .labels {
+        position: absolute;
+        top: 35px;
+        left: 130px;
+        color: #AF0A0A;
+        font-size: 22px;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    
+    #contact-section_2 form .input-box input:focus~.labels,
+    #contact-section_2 form .input-box input:valid~.labels,
+    #contact-section_2 form .input-box input:not([value=""])~.labels {
+        font-size: 15px;
+        color: #fff;
+        padding: 5px;
+        top: -10px;
+        left: 110px;
+    }
+
+    #contact-section_2 form .input-box .checklabel {
+        font-size: 30px;
+    }
+
+    #contact-section_2 form .input-box .checkbox {
+        width: 20px;
+        height: 20px;
+    }
+
+    #contact-section_2 form .input-box .doublebtn {
+        width: 30%;
+        font-size: 15px;
+        padding: 10px 15px;
+        margin: 20px 30px;
+        border: 1px solid white;
+    }
+    
+    #contact-section_2 form .input-box .doublebtn:hover {
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+}
